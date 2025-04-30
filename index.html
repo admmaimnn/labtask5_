@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JTMK Mobile Web</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<style>
+  body {
+    background-color: #f0f8ff; 
+  }
+  .ui-header {
+    background: #cce5ff; 
+  }
+  .ui-footer {
+    background: #222831; 
+  }
+  .ui-content {
+    background: #ffffff; 
+  }
+  table th {
+    background-color: #99ccff; 
+  }
+  table td {
+    background-color: #e6f2ff; 
+  }
+  ul li {
+    background-color: #e6f2ff; 
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  .ui-btn {
+    background: #b3d9ff; 
+    border: none;
+  }
+  .ui-btn:hover {
+    background: #99ccff;
+  }
+</style>
+
+
+<div data-role="page" id="home">
+
+  <div data-role="header" data-position="fixed">
+  <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="images/JTMK.png" alt="Logo" style="width:40px; height:auto;">
+    <h1 style="margin: 0; font-size: 18px;">JABATAN TEKNOLOGI MAKLUMAT DAN KOMUNIKASI</h1>
+  </div>
+      <ul>
+        <li><a href="#home" class="ui-btn-active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="content" style="text-align:center;">
+    <h2>WELCOME TO JTMK</h2>
+    <p>JTMK is the Department of Information and Communication Technology (JTMK) offering DDT courses (Diploma in Information Technology (Digital Technology)) at Seberang Perai Polytechnic (PSP).</p>
+    <a href="#projects" class="ui-btn">Projects</a>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4>&copy; DDT4A S1:2024/2025. All rights reserved.</h4>
+  </div>
+</div>
+
+<div data-role="page" id="about">
+
+  <div data-role="header" data-position="fixed">
+    <h1>About Us</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about" class="ui-btn-active">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="content">
+    <table data-role="table" class="ui-responsive" id="member-table">
+      <thead>
+        <tr>
+          <th>Photo</th>
+          <th>Name</th>
+          <th>Position</th>
+          <th>Contact</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="images/pfp1.jpg" alt="images" style="width:50px;"></td>
+          <td>Mr. Isaac Kishen Vincent</td>
+          <td>Head of Department</td>
+          <td>012-6678890</td>
+        </tr>
+        <tr>
+          <td><img src="images/pfp2.jpg" alt="images" style="width:50px;"></td>
+          <td>Ms. Christy H'ng Seih Ting</td>
+          <td>Program Head (Software Track)</td>
+          <td>012-5670981</td>
+        </tr>
+        <tr>
+          <td><img src="images/pfp3.jpg" alt="images" style="width:50px;"></td>
+          <td>Mr. Muhammad Adam Aiman</td>
+          <td>Program Head (Network Track)</td>
+          <td>013-4567890</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4>&copy; DDT4A S1: 2024/2025. All rights reserved.</h4>
+  </div>
+
+</div>
+
+<div data-role="page" id="projects">
+
+  <div data-role="header" data-position="fixed">
+    <h1>Projects</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects" class="ui-btn-active">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="content">
+    <ul data-role="listview">
+      <li>
+        <h2>Project 1</h2>
+        <a href="word/labtask3report.pdf" target="word">Lab Task 3 Report</a>
+      </li>
+      <li>
+        <h2>Project 2</h2>
+        <a href="word/project_BI_2_2324_.pdf" target="_blank">BI PROJECT REPORT</a>
+      </li>
+    </ul>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4>&copy; DDT4A S1:2024/2025. All rights reserved.</h4>
+  </div>
+
+</div>
+
+<div data-role="page" id="contact">
+
+  <div data-role="header" data-position="fixed">
+    <h1>Contact Us</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="ui-btn-active">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="content" style="text-align:center;">
+   <a href="tel:0197288709" class="ui-btn">
+   <img src="images/phone.png" alt="Phone Icon" style="width:20px; vertical-align:middle; margin-right:8px;">Call Us
+   </a>
+   <a href="mailto:isaackishen123@gmail.com" class="ui-btn">
+    <img src="images/email.jpg" alt="Mail Icon" style="width:20px; vertical-align:middle; margin-right:8px;">Email Us
+  </a>
+   <a href="https://wa.me/60197288709" class="ui-btn">
+    <img src="images/whatsapp.png" alt="WhatsApp Icon" style="width:20px; vertical-align:middle; margin-right:8px;">WhatsApp Us
+  </a>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4>&copy; DDT4A S1: 2024/2025. All rights reserved.</h4>
+  </div>
+
+</div>
+
+<div style="position: fixed; top: 50%; left: 0; transform: translateY(-50%); z-index: 1000;">
+  <a href="https://www.linkedin.com" target="_blank" style="display: block; margin: 5px; padding: 8px; background: #0077b5; color: white; text-align: center; border-radius: 0 5px 5px 0;">
+    <img src="images/linkedin.png" alt="LinkedIn" style="width: 24px;">
+  </a>
+  <a href="https://github.com" target="_blank" style="display: block; margin: 5px; padding: 8px; background: #333; color: white; text-align: center; border-radius: 0 5px 5px 0;">
+    <img src="images/github.png" alt="GitHub" style="width: 24px;">
+  </a>
+  <a href="https://twitter.com" target="_blank" style="display: block; margin: 5px; padding: 8px; background: #1da1f2; color: white; text-align: center; border-radius: 0 5px 5px 0;">
+    <img src="images/twitter.png" alt="Twitter" style="width: 24px;">
+  </a>
+  <a href="https://youtube.com" target="_blank" style="display: block; margin: 5px; padding: 8px; background: #ff0000; color: white; text-align: center; border-radius: 0 5px 5px 0;">
+    <img src="images/youtube.png" alt="YouTube" style="width: 24px;">
+  </a>
+  <a href="https://instagram.com" target="_blank" style="display: block; margin: 5px; padding: 8px; background: #e1306c; color: white; text-align: center; border-radius: 0 5px 5px 0;">
+    <img src="images/instagram.jpg" alt="Instagram" style="width: 24px;">
+  </a>
+</div>
+
+
+
+</body>
+</html>
